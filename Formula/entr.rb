@@ -7,7 +7,8 @@ class Entr < Formula
   sha1 '63190deb363fb8de91c862b17a88b77c88171017'
 
   def install
-    system "PREFIX=#{prefix} make"
-    system "PREFIX=#{prefix} make install"
+    ENV['PREFIX'] = prefix
+    system "make"
+    system "make install"
   end
 end
