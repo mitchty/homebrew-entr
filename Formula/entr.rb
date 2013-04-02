@@ -8,6 +8,10 @@ class Entr < Formula
 
   def install
     ENV['PREFIX'] = prefix
+    ENV['MANPREFIX'] = man
+    inreplace "Makefile" do |s|
+      s.gsub! "${PREFIX}/man", "${PREFIX}/share/man"
+    end
     system "make"
     system "make install"
   end
