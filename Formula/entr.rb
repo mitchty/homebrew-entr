@@ -4,10 +4,10 @@
 require 'formula'
 
 class Entr < Formula
-  url 'http://entrproject.org/code/entr-1.9.tar.gz'
+  url 'http://entrproject.org/code/entr-2.2.tar.gz'
   homepage 'https://bitbucket.org/eradman/entr'
-  version '1.9'
-  sha1 'b339dd1710addac2e69885681e95f19129ec6576'
+  version '2.2'
+  sha1 '71eedf5d9397a08a231f0ab400f5aeec4f77571b'
 
   def install
     ENV['PREFIX'] = prefix

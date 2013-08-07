@@ -9,5 +9,5 @@ Note, not my creation! For more information go to the source:
 
 # Installation
 
-``brew tap mitchty/entr``
-``brew install entr``
+    brew tap mitchty/entr
+    brew install entr
